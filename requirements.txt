@@ -1,0 +1,12 @@
+pandas
+langchain
+langchain_community
+pypdf
+langchain-google-genai
+dotenv
+PyPDF2
+langchain-google-vertexai
+google-generativeai
+
+
+-e .

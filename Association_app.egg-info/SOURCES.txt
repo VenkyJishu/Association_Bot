@@ -1,0 +1,7 @@
+setup.py
+Association_app.egg-info/PKG-INFO
+Association_app.egg-info/SOURCES.txt
+Association_app.egg-info/dependency_links.txt
+Association_app.egg-info/top_level.txt
+data_ingestion/__init__.py
+data_ingestion/ingestion_pipeline.py
