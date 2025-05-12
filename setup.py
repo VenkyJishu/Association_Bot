@@ -6,5 +6,4 @@ setup(name="Association-app",
       author_email="venky.tjm@gmail.com",
       packages=find_packages(),     
 
-
 )

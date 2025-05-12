@@ -7,6 +7,7 @@ dotenv
 PyPDF2
 langchain-google-vertexai
 google-generativeai
+langchain-astradb
 
 
 -e .
