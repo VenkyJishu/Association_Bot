@@ -8,6 +8,7 @@ PyPDF2
 langchain-google-vertexai
 google-generativeai
 langchain-astradb
+fastapi 
 
 
 -e .

@@ -1,13 +1,13 @@
 llm:
   provider : "google"
-  chat_model : "gemini-1.5-pro"
+  chat_model : "gemini-2.0-flash-lite"
 
 embedding_model:
   provider : "google"
   model_name : "models/text-embedding-004"
 
 retriever:
-  top_k : 10
+  top_k : 2
 
 astra_db:
-  collection_name : "association_data_collection"
+  collection_name : "finance_v2"

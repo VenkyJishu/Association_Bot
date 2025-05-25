@@ -22,13 +22,13 @@ class ModelLoader():
             raise EnvironmentError(f"Missing environment variables {missing_var}")
     
     def load_embeddings(self):
-        print(f"venky self.google_api_key is {self.google_api_key}")
-        embeddings = GoogleGenerativeAIEmbeddings(model=self.config['embedding_model']['model_name'],api_key=self.google_api_key)
+        #print(f"venky self.google_api_key is {self.google_api_key}")
+        embeddings = GoogleGenerativeAIEmbeddings(model=self.config['embedding_model']['model_name'],google_api_key=self.google_api_key)
         return embeddings
     
     def load_llm(self):
 
-        llm = ChatGoogleGenerativeAI(model=self.config['llm']['chat_model'],api_key=self.google_api_key)
+        llm = ChatGoogleGenerativeAI(model=self.config['llm']['chat_model'],google_api_key=self.google_api_key,temperature=0.2)
         return llm
 
 
