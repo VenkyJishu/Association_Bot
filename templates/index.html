@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vaishno Finance Agent</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 50px;
+        }
+        input[type=text] {
+            width: 80%;
+            padding: 10px;
+        }
+        input[type=submit] {
+            padding: 10px 20px;
+        }
+        .response {
+            margin-top: 30px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #007acc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat with Vaishno Seasons Agent</h1>
+    <form action="/ask" method="post">
+        <input type="text" name="query" placeholder="Type your question..." value="{{ query if query else '' }}" required />
+        <input type="submit" value="Ask" />
+    </form>
+
+    {% if chat_history %}
+    <div class="response">
+        <h3>Chat History:</h3>
+        {% for entry in chat_history %}
+            <p><strong>You:</strong> {{ entry.user }}</p>
+            <p><strong>Agent:</strong> {{ entry.bot | safe }}</p>
+            <hr>
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>

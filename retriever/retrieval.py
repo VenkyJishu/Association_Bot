@@ -93,7 +93,7 @@ if __name__=='__main__':
     # ✅ Count documents safely
     #print("📦 Total docs in Astra DB:", raw_collection.count_documents())
 
-    user_query = "Did A-107 flat paid mmaintenance in May 2025  "
+    user_query = "Who paid maintenance recently, list recent 5  "
     results = retriever_obj.call_retriever(user_query)
     print(f"🔎 Retrieved {len(results)} documents")
 

@@ -7,6 +7,8 @@ config/__init__.py
 config/config_loader.py
 data_ingestion/__init__.py
 data_ingestion/ingestion_pipeline.py
+prompt_library/__init__.py
+prompt_library/prompt.py
 retriever/__init__.py
 retriever/retrieval.py
 utils/__init__.py

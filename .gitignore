@@ -2,3 +2,6 @@
 ass_env
 dataset
 faiss_index
+*.eng-info
+faiss_index
+__pycache__
